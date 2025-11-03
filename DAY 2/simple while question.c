@@ -72,8 +72,55 @@ int main(){
        return 0;
     }
  
+//Input a number and find the sum of its digits using a while loop.
+//Example: 1234 → 10
+//num % 10 = last number 
+//sum = sum + num;
+//num/10 eleminate the last no.
+//til num = 0;
 
 
+#include <stdio.h>
+
+int main() {
+    // Write C code here
+     int i = 1234;
+    int num;
+    int sum = 0;
+    while(num != 0){
+        num = i % 10; //get last
+        sum = sum + num; //sum
+        i = i/10;// eliminate last
+    
+    }
+    printf("%d\n",sum);
+
+    return 0;
+}
+
+
+//Reverse a number
+//Input a number and print its reverse using a while loop.
+//Example: 1234 → 4321
+
+
+#include <stdio.h>
+
+int main() {
+    // Write C code here
+     int i = 1234;
+    int num;
+    int remainder = 0;
+    while(i != 0){
+        num = i % 10; //get last
+        remainder = (remainder*10) + num; //sum
+        i = i/10;// eliminate last
+    
+    }
+    printf("%d\n",remainder);
+
+    return 0;
+}
 
 
 
