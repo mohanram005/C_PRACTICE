@@ -122,5 +122,34 @@ int main() {
     return 0;
 }
 
+//PALINDRONE 
+#include <stdio.h>
 
+int main() {
+    // Write C code here
+     int i = 121;
+     int num1 = i;
+    int num;
+    int remainder = 0;
+    
+    while(i != 0){
+        num = i % 10; //get last
+        remainder = (remainder*10) + num; //sum
+        i = i/10;// eliminate last
+
+    
+    }
+    
+    printf("%d\n",remainder);
+    if(num1 == remainder){
+        printf("it is palindrome\n");
+    }
+    else{
+        printf("not palindrone\n");
+    }
+    
+    
+
+    return 0;
+}
 
