@@ -294,7 +294,35 @@ int main(){
     return 0;
 }
 
+//prime
+#include<stdio.h>
 
+int main(){
+    int num = 19;
+    int i = 2;
+    int half = num/2;
+    int flag = 0;
+    while(i <= half){
+        
+        if(num % i == 0){
+            flag = 1;
+            break;
+        }
+        
+        i++;
+    }
+    if(flag == 1){
+        printf("it is not prime");
+    }
+    else{
+        printf("it is  prime");
+    }
+    
+    
+    
+    
+    return 0;
+}
 
 
 
