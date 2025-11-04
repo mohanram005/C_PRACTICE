@@ -198,3 +198,110 @@ int main(){
     }
     return 0;
 }
+
+//armstrong no.
+#include <stdio.h>
+#include <math.h>
+
+
+
+int main() {
+    // Write C code here
+    int i = 153;
+    int backup = i;
+    int num;
+    int arm = 0;
+    int count = 0;
+    
+    int temp = i;
+    while(temp != 0){
+        count ++;
+        temp = temp/10;
+    }
+    
+    
+     temp = i;
+     while(temp != 0){
+         
+         int digit = temp % 10;
+         arm += pow(digit,count);
+         temp = temp /10;
+     }
+    if( i == arm){
+        printf("the given is armstrong");
+    }else{
+        printf("the given is not a armstrong");
+    }
+     return 0;
+}
+
+
+//power without pow function
+#include<stdio.h>
+
+int main(){
+    int i = 0;
+    int base;
+    int expo;
+    int   power = 1;
+    printf("give the base value\n");
+    scanf("%d",&base);
+    
+    printf("give the expo value\n");
+    scanf("%d",&expo);
+    
+    //int n2 = base;
+    while(i < expo){
+        power = power * base;
+       
+        i++;
+    }
+    //printf("%u\n",sizeof(expo));
+    printf("%lld\n",power);
+    
+    
+    return 0;
+}
+
+
+
+//gcd
+#include<stdio.h>
+
+int main(){
+    
+    int a = 30;
+    int b = 15;
+    int i = 1;
+    int gcd = 1;
+    int min;
+    
+    min = (a < b) ? a : b; 
+    
+    while(i <= min){
+        
+        if(a % i == 0 && b % i == 0){
+            
+            gcd = i;
+        }
+        
+        i++;
+    }
+    printf("%d\n",gcd);
+    
+    
+    
+    return 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
