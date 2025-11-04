@@ -174,3 +174,27 @@ int main() {
 
     return 0;
 }
+
+
+
+
+//(0,1,1,2,3,5,8,13,21,34,\dots \). To find the next number, you simply add the last two //numbers together (e.g., \(1+1=2\), \(1+2=3\), \(2+3=5\))
+#include<stdio.h>
+int i = 0;
+int fibbo = 0;
+
+int n1 = 0;
+int n2  = 1;
+int main(){
+    while(i <= 10){
+        
+        
+        fibbo = n1 + n2;
+        n1 = n2;
+        n2 = fibbo;
+  
+        printf("%d\n",fibbo);
+        i++;
+    }
+    return 0;
+}
