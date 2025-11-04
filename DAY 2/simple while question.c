@@ -153,3 +153,24 @@ int main() {
     return 0;
 }
 
+
+//Input a number n, and find its factorial using a while loop.
+//Example: 5 → 120
+#include <stdio.h>
+
+int main() {
+    
+    int i = 1;
+    int fact = 1;
+    // Write C code here
+   while(i <= 5){
+       fact = fact * i;
+       
+       i++;
+       
+   }
+   printf("%d\n",fact);
+  
+
+    return 0;
+}
