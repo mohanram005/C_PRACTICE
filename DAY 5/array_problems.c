@@ -65,7 +65,39 @@ int main() {
     return 0;
 }
 
+//Compare two arrays Check if two arrays are exactly the same (same elements, different order).
+#include <stdio.h>
 
+int main() {
+    // Write C code here
+    int a[5] = {1,2,3,4,5};
+    int b[5] = {1,2,3,4,5};
+    int count = 0;
+    for(int i = 0;i < 5;i ++){
+        
+        for(int j = 0;j < 5;j++){
+            if(a[i] == b[j])
+            {
+                count++;
+                break;
+               
+            }
+        }
+        
+        printf("%d\n",count);
+        
+        
+    }
+    if(count == 5){
+        printf("same array");
+    }else{
+        printf("not a same array");
+    }
+    
+    printf("Try programiz.pro");
+
+    return 0;
+}
 
 
 
