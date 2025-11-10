@@ -44,3 +44,34 @@ int main() {
 
     return 0;
 }
+
+
+
+
+//Copy one array into another Copy all elements of array A into array B using a loop
+#include <stdio.h>
+
+int main() {
+    // Write C code here
+    int a[5] = {1,2,3,4,5};
+    int b[5];
+    for(int i = 0;i <5;i ++){
+        b[i] = a[i];
+        printf("b array is %d\n",b[i]);
+    }
+    
+    printf("Try programiz.pro");
+
+    return 0;
+}
+
+
+
+
+
+
+
+
+
+
+
