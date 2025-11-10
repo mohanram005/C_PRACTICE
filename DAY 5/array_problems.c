@@ -99,9 +99,71 @@ int main() {
     return 0;
 }
 
+//Find the second largest element Input numbers and find which number is the second biggest
+#include <stdio.h>
 
+int main() {
+    
+    int a[] = {6,2,45,4,5};
+    int b = sizeof(a)/sizeof(a[0]);
+    
+    int largest;
+    int sec_large;
+    
+    // printf("%d\n",b);
+    if(a[0] > a[1]){
+        largest = a[0];
+        sec_large = a[1];
+        
+    }else{
+        largest = a[1];
+        sec_large = a[0];
+    }
+    
+    for(int i = 2;i < 5;i++){
+        if(a[i] > largest){
+            
+            sec_large = largest;
+            largest = a[i];
+        }else if(a[i] > sec_large && a[i] != largest){
+            sec_large = a[i];
+        }
+    }
+    
+    printf("the sec_large is %d\n",sec_large);
+    
 
+    return 0;
+}
 
+//Sort an array (ascending order) Use simple logic (like bubble sort or selection sort) to arrange elements from smallest to largest.
+#include <stdio.h>
+
+int main() {
+    
+    int a[] = {6,2,9,4,5};
+    int temp;
+    for(int i = 0;i < 4;i++){
+        for(int j = i + 1;j < 5;j++){
+            
+            if(a[i] < a[j]){//ascending and (a[i] < a[j]) descending 
+             
+             temp = a[i];
+             a[i] = a[j];
+             a[j] = temp;
+                
+            }
+            
+        }
+        
+    }
+    for(int i = 0;i < 5;i++){
+        printf("the array is %d\n",a[i]);
+    }
+    
+
+    return 0;
+}
 
 
 
